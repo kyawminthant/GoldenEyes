@@ -76,5 +76,6 @@ Scans for various web application vulnerabilities, including:
 
 # References
 
+- [LinuxConfig] (https://linuxconfig.org/bash-scripting-tutorial-for-beginners)
 - [TerminatorZ](https://github.com/blackhatethicalhacking/TerminatorZ)
 - [PluralSight](https://www.pluralsight.com/cloud-guru/labs/aws/write-an-automated-script-to-perform-a-vulnerability-scan-and-log-the-results)
