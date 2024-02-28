@@ -75,8 +75,6 @@ echo "QUOTE OF THE DAY: $random_daily_quote" | lolcat
 sleep 1
 echo "TODAY IS YOURS... " | lolcat
 sleep 1
-cowsay -f tux
-sleep 1
 figlet -w 80 -f small GoldenEyes | lolcat
 echo ""
 echo "YOUR ARE USING GoldenEyes.sh - (v1.0) CODED BY KYAW MIN THANT FOR MASTER THESIS PRACTICAL PART ONLY!" | lolcat
