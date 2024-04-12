@@ -99,7 +99,10 @@ else
   mkdir "$domain"
 fi
 
-waybackurls $domain | grep -E "\.js$|\.php$|\.yml$|\.env$|\.txt$|\.xml$|\.config$" | httpx -verbose | sort -u | tee urls.txt lolcat
+echo "Fetching URLs for scanning..."
+gau $domain | grep -E "\.js$|\.php$|\.yml$|\.env$|\.txt$|\.xml$|\.config$" | sort -u > urls.txt lolcat
+
+#waybackurls $domain | grep -E "\.js$|\.php$|\.yml$|\.env$|\.txt$|\.xml$|\.config$" | httpx -verbose | sort -u | tee urls.txt lolcat
 
 number_count=$(wc -l < urls.txt)
 echo "Total URLs found: $number_count" | lolcat
