@@ -100,7 +100,10 @@ else
 fi
 
 echo "Fetching URLs for scanning..."
-gau $domain | grep -E "\.js$|\.php$|\.yml$|\.env$|\.txt$|\.xml$|\.config$" | sort -u > urls.txt lolcat
+
+wget --spider --recursive --no-verbose --no-parent --reject="index.html*" $domain 2>&1 | grep '^--' | awk '{ print $3 }' | grep -E "\.js$|\.php$|\.yml$|\.env$|\.txt$|\.xml$|\.config$" | sort -u > urls.txt
+
+#gau $domain | grep -E "\.js$|\.php$|\.yml$|\.env$|\.txt$|\.xml$|\.config$" | sort -u > urls.txt lolcat
 
 #waybackurls $domain | grep -E "\.js$|\.php$|\.yml$|\.env$|\.txt$|\.xml$|\.config$" | httpx -verbose | sort -u | tee urls.txt lolcat
 
