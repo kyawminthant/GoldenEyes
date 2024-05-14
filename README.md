@@ -56,25 +56,7 @@ Scans for various web application vulnerabilities, including:
 - Only reports vulnerabilities, making it easy to prioritize and remediate vulnerabilities in a timely manner
 
 
-# Obtaining required software for running the tool
-- waybackurls: This tool can be installed by running `go install github.com/tomnomnom/waybackurls@latest`
 
-- cURL: This tool is commonly pre-installed on Kali Linux and Ubuntu, but can be installed by running `apt-get install curl` on Ubuntu or `brew install curl` on MacOS
-
-- httpx: is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryable http library. To install it: `go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest`
-
-- lolcat: `pip install lolcat` for rainbow beauty
-
-# Installation to use
-`git clone https://github.com/kyawminthant/GoldenEyes`
-
-`cd GoldenEyes`
-
-`chmod +x GoldenEyes.sh`
-
-`./GoldenEyes.sh`
-
-# References
 
 - [LinuxConfig](https://linuxconfig.org/bash-scripting-tutorial-for-beginners)
 - [TerminatorZ](https://github.com/blackhatethicalhacking/TerminatorZ)
